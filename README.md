@@ -1,49 +1,63 @@
-# NLP-Based Sentiment & Context Analysis of Spotify Reviews
+# Spotify App Review Analysis — NLP
 
-## Project Overview
+A product-analytics project that uses Natural Language Processing to analyze Spotify user reviews, classify sentiment, and identify recurring themes in customer feedback.
 
-This project analyzes user reviews of the Spotify app using Natural Language Processing (NLP) techniques. The objective is to understand user sentiment, identify common issues, and extract meaningful insights to support data-driven decision-making.
+## Business Question
 
-## Business Problem
+How can large volumes of app-review text be converted into structured product insights that help teams understand user satisfaction and recurring pain points?
 
-How can user feedback be leveraged to improve product features and enhance user experience?
+## Approach
 
-## Dataset
+The project applies a standard NLP workflow:
 
-* Source: Public dataset (e.g., Kaggle / App Store / Google Play)
-* Data includes user reviews and ratings
+1. Review-text cleaning
+2. Tokenization and text normalization
+3. Stopword and punctuation handling
+4. Lemmatization
+5. Sentiment classification
+6. Context/theme analysis
+7. Visualization and interpretation
 
-## Tools & Technologies
+## Findings from the Analysis
 
-* Python
-* Pandas
-* NLTK / TextBlob
-* Matplotlib / Seaborn
+The documented review analysis highlights several recurring themes:
 
-## Process
+- negative sentiment associated with **advertising and playback issues**
+- positive feedback around **playlist personalization and music recommendations**
+- technical problems such as **app crashes** appearing as a source of dissatisfaction
 
-1. Data Cleaning (removing noise, stopwords, punctuation)
-2. Text Processing (tokenization, lemmatization)
-3. Sentiment Analysis (positive, negative, neutral classification)
-4. Context Analysis (identifying key themes in reviews)
-5. Data Visualization
+These findings are descriptive signals from the project dataset and are not presented as representative of Spotify's complete user base.
 
-## Key Insights
+## Product Relevance
 
-* Negative sentiment is mainly driven by ads and playback issues
-* Positive reviews highlight playlist personalization and music recommendations
-* Technical issues such as app crashes affect user satisfaction
+Review analytics can help product and customer-experience teams:
 
-## Conclusion
+- identify recurring customer pain points
+- prioritize areas for deeper product investigation
+- track sentiment themes over time
+- complement quantitative product metrics with qualitative feedback
 
-The analysis reveals that improving app stability and optimizing the ad experience could significantly enhance overall user satisfaction.
+## Tech Stack
 
-## Future Improvements
+- **Python / Jupyter Notebook**
+- **pandas**
+- **NLTK**
+- **TextBlob**
+- **Matplotlib**
+- **Seaborn**
 
-* Advanced NLP models (e.g., BERT)
-* Topic modeling for deeper context analysis
-* Real-time review analysis
+## Repository Contents
 
-## Author
+- [`Natural_Language_Processing_context_analysis_Aprip26.ipynb`](Natural_Language_Processing_context_analysis_Aprip26.ipynb) — NLP analysis notebook
+- `Spotify reviews.csv` — review dataset
 
-Vansh
+## Skills Demonstrated
+
+Natural Language Processing · Sentiment analysis · Text preprocessing · Product analytics · Customer feedback analysis · Python · Data visualization
+
+## Potential Extensions
+
+- topic modeling for more systematic theme extraction
+- transformer-based sentiment classification
+- time-based sentiment monitoring
+- integration with product KPIs for deeper product analysis
